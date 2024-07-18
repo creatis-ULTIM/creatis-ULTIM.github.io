@@ -1,0 +1,333 @@
+---
+layout: page
+title: Members
+order: 2
+permalink: /members/
+---
+<style>
+    /* TODO: Add styling to list with li */
+    img {
+	width: 150px;
+	height: auto;
+    }
+	th {
+	  width: 78%;
+	}
+    span.weak {
+    font-weight: lighter;
+}
+</style>
+
+<div class="entry-content">
+
+  <h1>Professors</h1>
+
+    <table>
+        {% for item in site.data.members.professors %}
+         <tr>
+             <th>
+                 <strong>{{ item.firstname }} {{ item.lastname }}  </strong> </br>
+                 {%if item.university %}
+                  Institution: {{ item.university }}
+                 {% endif %} </br>   
+                   <!--<a href="https://creatis-ULTIM.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a> -->
+                    {%if item.interests %}
+                        Interests: {{ item.interests }}
+                    {% endif %} </br>
+                 {%if item.url %}
+                  <a href="{{item.url}}" target="_blank">Web site</a>
+                 {% endif %}                    
+             </th>
+              <th>
+                  {%if item.picture %}
+                    <img src={{item.picture}}>
+                  {% endif %}
+              </th>
+         </tr>
+       {% endfor %}
+
+    </table>
+
+
+  <h1>Associate professors</h1>
+
+    <table>
+        {% for item in site.data.members.associate_professors %}
+         <tr>
+             <th>
+                 <strong>{{ item.firstname }} {{ item.lastname }}  </strong> </br>
+                 {%if item.university %}
+                  Institution: {{ item.university }}
+                 {% endif %} </br>
+                   <!--<a href="https://creatis-ULTIM.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a> -->
+                    {%if item.interests %}
+                        Interests: {{ item.interests }}
+                    {% endif %} </br>
+		 {%if item.url %}
+                  <a href="{{item.url}}" target="_blank">Web site</a>
+                 {% endif %}
+             </th>
+              <th>
+                  {%if item.picture %}
+                    <img src={{item.picture}}>
+                  {% endif %}
+              </th>
+         </tr>
+       {% endfor %}
+
+    </table>
+
+
+
+  <h1>Researchers</h1>
+
+    <table>
+        {% for item in site.data.members.researchers %}
+         <tr>
+             <th>
+                 <strong>{{ item.firstname }} {{ item.lastname }}  </strong> </br>
+                 {%if item.institution %}
+                  Institution: {{ item.institution }}
+                 {% endif %} </br>   
+                   <!--<a href="https://creatis-ULTIM.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a> -->
+                 {%if item.interests %}
+                  Interests: {{ item.interests }}
+                 {% endif %} </br>
+                 {%if item.url %}
+                  <a href="{{item.url}}" target="_blank">Web site</a>
+                 {% endif %}                 
+             </th>
+              <th>
+                  {%if item.picture %}
+                    <img src={{item.picture}}>
+                  {% endif %}
+              </th>
+         </tr>
+       {% endfor %}
+
+    </table>
+    
+    
+  <h1>Research engineer</h1>
+
+    <table>
+        {% for item in site.data.members.research_engineers %}
+         <tr>
+             <th>
+                 <strong>{{ item.firstname }} {{ item.lastname }}  </strong> </br>
+                 {%if item.institution %}
+                  Institution: {{ item.institution }}
+                 {% endif %} </br>   
+                   <!--<a href="https://creatis-ULTIM.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a> -->
+                 {%if item.interests %}
+                  Interests: {{ item.interests }}
+                 {% endif %} </br>
+                 {%if item.url %}
+                  <a href="{{item.url}}" target="_blank">Web site</a>
+                 {% endif %}                 
+             </th>
+              <th>
+                  {%if item.picture %}
+                    <img src={{item.picture}}>
+                  {% endif %}
+              </th>
+         </tr>
+       {% endfor %}
+
+    </table>    
+    
+    
+  <h1>Medical doctors</h1>
+
+    <table>
+        {% for item in site.data.members.medical_doctors %}
+         <tr>
+             <th>
+                 <strong>{{ item.firstname }} {{ item.lastname }}  </strong> </br>
+                 {%if item.institution %}
+                  Institution: {{ item.institution }}
+                 {% endif %} </br>   
+                   <!--<a href="https://creatis-ULTIM.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a> -->
+                    {%if item.speciality %}
+                        Speciality: {{ item.speciality }}
+                    {% endif %}
+                   </br>
+                    {%if item.expertise %}
+                        Expertise: {{ item.expertise }}
+                    {% endif %}                    
+             </th>
+              <th>
+                  {%if item.picture %}
+                    <img src={{ item.picture }}>
+                  {% endif %}
+              </th>
+         </tr>
+       {% endfor %}
+
+    </table>      
+
+  <h1>PhD - 1st year</h1>
+
+    <table>
+        {% for item in site.data.members.phd_first %}
+         <tr>
+             <th>
+                 <strong>{{ item.firstname }} {{ item.lastname }}  </strong> </br>
+                 {%if item.institution %}
+                  Institution: {{ item.institution }}
+                 {% endif %} </br>
+                 {%if item.supervisors %}
+                  Supervisor(s): {{ item.supervisors }}
+                 {% endif %} </br>                 
+		 {%if item.subject %}
+                 {%if item.interests %}
+                  Interests: {{ item.interests }}
+                 {% endif %}
+                 </br></br>                 
+		  Subject: <em>{{ item.subject }}</em>
+		 {% endif %}                   
+                 <!--<a href="https://creatis-ULTIM.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a> -->
+             </th>
+              <th>
+                  {%if item.picture %}
+                    <img src={{ item.picture }}>
+                  {% endif %}
+              </th>
+         </tr>
+       {% endfor %}
+
+    </table>
+    
+  <h1>PhD - 2nd year</h1>
+
+    <table>
+        {% for item in site.data.members.phd_second %}
+         <tr>
+             <th>
+                 <strong>{{ item.firstname }} {{ item.lastname }}  </strong> </br>
+                 {%if item.institution %}
+                  Institution: {{ item.institution }}
+                 {% endif %} </br>
+                 {%if item.supervisors %}
+                  Supervisor(s): {{ item.supervisors }}
+                 {% endif %} </br>                 
+		 {%if item.subject %}
+                 {%if item.interests %}
+                  Interests: {{ item.interests }}
+                 {% endif %}
+                 </br></br>                 
+		  Subject: <em>{{ item.subject }}</em>
+		 {% endif %}                   
+                 <!--<a href="https://creatis-ULTIM.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a> -->
+             </th>
+              <th>
+                  {%if item.picture %}
+                    <img src={{ item.picture }}>
+                  {% endif %}
+              </th>
+         </tr>
+       {% endfor %}
+
+    </table>    
+    
+  <h1>PhD - 3rd year</h1>
+
+    <table>
+        {% for item in site.data.members.phd_third %}
+         <tr>
+             <th>
+                 <strong>{{ item.firstname }} {{ item.lastname }}  </strong> </br>
+                 {%if item.institution %}
+                  Institution: {{ item.institution }}
+                 {% endif %} </br>
+                 {%if item.supervisors %}
+                  Supervisor(s): {{ item.supervisors }}
+                 {% endif %} </br>                 
+		 {%if item.subject %}
+                 {%if item.interests %}
+                  Interests: {{ item.interests }}
+                 {% endif %}
+                 </br></br>                 
+		  Subject: <em>{{ item.subject }}</em>
+		 {% endif %}                   
+                 <!--<a href="https://creatis-ULTIM.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a> -->
+             </th>
+              <th>
+                  {%if item.picture %}
+                    <img src={{ item.picture }}>
+                  {% endif %}
+              </th>
+         </tr>
+       {% endfor %}
+
+    </table>        
+    
+  <h1>PhD - 4th year</h1>
+
+    <table>
+        {% for item in site.data.members.phd_fourth %}
+         <tr>
+             <th>
+                 <strong>{{ item.firstname }} {{ item.lastname }}  </strong> </br>
+                 {%if item.institution %}
+                  Institution: {{ item.institution }}
+                 {% endif %} </br>
+                 {%if item.supervisors %}
+                  Supervisor(s): {{ item.supervisors }}
+                 {% endif %} </br>                 
+		 {%if item.subject %}
+                 {%if item.interests %}
+                  Interests: {{ item.interests }}
+                 {% endif %}
+                 </br></br>                 
+		  Subject: <em>{{ item.subject }}</em>
+		 {% endif %}                   
+                 <!--<a href="https://creatis-ULTIM.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a> -->
+             </th>
+              <th>
+                  {%if item.picture %}
+                    <img src={{ item.picture }}>
+                  {% endif %}
+              </th>
+         </tr>
+       {% endfor %}
+
+    </table>         
+    
+  <h1>Alumni</h1>
+
+    <table>
+        {% for item in site.data.members.alumni %}
+         <tr>
+             <th>
+                 <strong>{{ item.firstname }} {{ item.lastname }}  </strong> </br>
+                 {%if item.institution %}
+                  Institution: {{ item.institution }}
+                 {% endif %} </br>
+                 {%if item.supervisors %}
+                  Supervisor(s): {{ item.supervisors }}
+                 {% endif %} </br>                 
+		 {%if item.subject %}
+                 {%if item.interests %}
+                  Interests: {{ item.interests }}
+                 {% endif %}
+                 </br></br>                 
+		  Subject: <em>{{ item.subject }}</em>
+		 {% endif %}                   
+                 <!--<a href="https://creatis-ULTIM.github.io/search/?query={{ item.firstname }}+{{ item.lastname }}">Posts</a> -->
+             </th>
+              <th>
+                  {%if item.picture %}
+                    <img src={{ item.picture }}>
+                  {% endif %}
+              </th>
+         </tr>
+       {% endfor %}
+
+    </table>       
+    
+</div>
+
+
+
+

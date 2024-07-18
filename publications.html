@@ -1,0 +1,21 @@
+---
+layout: page
+title: Publications
+order: 1
+permalink: /publications/
+---
+<style>
+    /* TODO: Add styling to list with li */
+</style>
+
+
+<h2>{{site.data.publications.journal_list_title}}</h2>
+<div class="entry-content">
+  <ul>
+       {% for item in site.data.publications.journal%}
+       <li>
+	  {{item.label}}
+       </li><br>
+       {% endfor %}
+  </ul>
+</div>

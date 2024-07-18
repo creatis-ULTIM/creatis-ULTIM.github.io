@@ -1,0 +1,30 @@
+####Template####
+#- firstname: 'First Name'
+#  lastname: ''
+#  picture: 'name of picture file in members/'
+#  interests: "Short text indicating current interests."
+#  grades: % List of gardes
+#    - grade:
+#      name: PhD
+#      startyear: 2020
+#      endyear: '' Empty string to indicate ongoing (will add '-' to page)
+
+member_list_title: members/
+
+professors: 
+
+associate_professor:
+
+researchers:
+ 
+research_ingeneers:
+
+medical_doctors:
+
+phd_first:
+
+phd_second:
+
+phd_third:
+
+alumni: 
