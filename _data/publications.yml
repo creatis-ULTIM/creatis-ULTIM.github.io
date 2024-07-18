@@ -1,12 +1,6 @@
 journal_list_title: Publications
 journal:
 
-journal_list_title: Publications
-journal:
-
-journal_list_title: Publications
-journal:
-
 	- label: 'François Gaits, Nicolas Mellado, Adrian Basarab. Ultrasound volume reconstruction from 2D Freehand acquisitions using neural implicit representations. 21st IEEE International Symposium on Biomedical Imaging (ISBI 2024), IEEE Signal Processing Society; IEEE Engineering in Medicine and Biology Society, May 2024, Athènes, Greece. à paraître. &#x27E8;hal-04480668&#x27E9;'
 	- label: 'Julia Puig, Denis Friboulet, Hang Jung Ling, François Varray, Michael Mougharbel, et al.. Boosting Cardiac Color Doppler Frame Rates with Deep Learning. IEEE Transactions on Ultrasonics, Ferroelectrics and Frequency Control, In press, pp.1-1. &#x27E8;10.1109/TUFFC.2024.3424549&#x27E9;. &#x27E8;hal-04643079&#x27E9;'
 	- label: 'Damien Garcia, François Varray. SIMUS3: an open-source simulator for 3-D ultrasound imaging. Computer Methods and Programs in Biomedicine, 2024, pp.108169. &#x27E8;10.1016/j.cmpb.2024.108169&#x27E9;. &#x27E8;hal-04540765&#x27E9;'
