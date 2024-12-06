@@ -13,7 +13,7 @@ pdf: "https://arxiv.org/abs/1811.08252"
 <br/>
 
 # Context
-*Contrast-enhanced ultrasound imaging* (CEUS) allows to visualise blood vessels to assess several clinical conditions. It makes use of *gas microbubbles* as an ultrasound contrast agent that is injected in the vascular system.
+*Contrast-enhanced ultrasound imaging* (CEUS) allows to visualise blood vessels to assess several clinical conditions. It makes use of *gas microbubbles* as an  ultrasound contrast agent that is injected in the vascular system.
 
 <br/>
 
