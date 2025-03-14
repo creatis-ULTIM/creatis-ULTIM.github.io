@@ -68,7 +68,7 @@ The case a is considered the true measurement and is used as a reference for err
 Here are the results for the mean BSC: 
 
 {:refdef: style="text-align: center;"}
-![](/collections/images//BSC//BSC.png){: width="600" }
+![](/collections/images//BSC//BSC.jpg){: width="600" }
 {:refdef}
 <p style="text-align: center;font-style:italic;"> Mean BSC of the tumor using both the reference and the bead method.</p>
 
