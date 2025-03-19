@@ -24,21 +24,21 @@ pdf: "10.1088/1361-6560/aae2fb"
 
 Considering straight ray approximation, the slowness can be directly linked to the differential time-of-flight based on apparent dispalcements along different ultrasound wave propagation paths when changing the steering angle. 
 
-![](/collections/images/SoS/jaeger.png) 
+![](/collections/images/20250319_SoS/jaeger.jpeg) 
 
 The transmitted (Tx) wave reaches the hypothetical scatterer after traveling along the path shown by the gray wedge, which is unaffected by the contrast region. However, this changes when the Tx angle shifts from $$\Phi$$ to -$$ \Phi$$. In this case, the portion of the Tx wave that reaches the scatterer passes through the contrast region, causing it to arrive at the scatterer earlier than it would in the hypothetical scenario where there is no sound-speed contrast. This results in a shorter t1. Since the reception is performed on all elements, the reception time wouldn't be influenced if changing the steering angle. 
 The transmission time can therefore be written as : 
 T($$\theta$$) = T_0 ($$\theta$$) +$$\tau$$($$\theta$$). 
 
 # Problem formulation in spatial domain 
-![](/collections/images/SoS/SoSCUTE.png)
+![](/collections/images/20250319_SoS/SoSCUTE.jpeg)
 * Spatial domain discretization to a 2D grid containing a finite number of cells C. 
 * Considering the path length lp,c per ray path and cell c, the time of flight can be linked to the slowness as follows : 
 
 $$t_p = \sum l_{p,c} \sigma _c $$
 * Considering two ray paths with different steering angles, the sound speed deviations accumulated along the propagation paths can manifest in a shift in the time of flight : 
 
-![](/collections/images/SoS/tau.png)
+![](/collections/images/20250319_SoS/tau.jpeg)
 
 
 
@@ -53,14 +53,14 @@ In pulse-echo imaging using a conventional ultrasound probe with single-sided ti
 Moreover, the presence of shadow regions lead to an ill-conditioned sparse matrix L. 
 => The problem needs to be solved as a regularized optimization probelm : 
 
-![](/collections/images/SoS/TV.png)
+![](/collections/images/20250319_SoS/TV.jpeg)
 
 Considering limited-angle nature of the USCT problem, i.e., with naturally lower
 resolution in the axial direction, one can regularize gradients in each axes
 differently.
 In this paper, they used Multi-Angle Anisotropically-Weighted Total Variation which is based on considering multiple gradient directions in the spatial regularization term, rather than using just two orthogonal gradient estimates. 
 
-![](/collections/images/SoS/MA-AWTV.png)
+![](/collections/images/20250319_SoS/MA-AWTV.jpeg)
 Bayesian approach : Incorporation of prior known data from B-mode imaging to reduce the number of degrees of freedom in the reconstruction of the inverse problem. 
 
 The quantitative speed of sound maps are then derivated from the slowness as SoS =$$\sigma ^{-1}$$
@@ -73,7 +73,7 @@ The quantitative speed of sound maps are then derivated from the slowness as SoS
 A typical MA-AWTV reconstruction in CVX presently runs in <30 s on an Intel R© CoreTM i7-4770k CPU @3.5 GHz with 16 GB RAM for a single frame and for a domain of size
 40 × 38 mm with 0.3 mm reconstruction discretization using a pair of plane-wave angular projections with the same discretization resolution.
 
-![](/collections/images/SoS/taumap.png)
+![](/collections/images/20250319_SoS/taumap.jpeg)
  Using synthenic data, the study focused on investigating the effect of : 
 * Noise by artificially introducing gaussian noise.
 * Regularization method (L2 regularization / TV / L2-data AWTV / AWTV / MA-AWTV).
@@ -86,7 +86,7 @@ Estbalished a comparison between fourier domain problem formulation and spatial 
 $\tau$ values per each cell c were directly generated using ray tracing for calculating L and the same geometric weights L
 were used in the inverse problem. 
 
-![](/collections/images/SoS/SDRvsFDR.png)
+![](/collections/images/20250319_SoS/SDRvsFDR.jpeg)
 The proposed SDR method provides a visible image quality improvement with
 respect to FDR. 
 
@@ -94,7 +94,7 @@ The SDR method achieves piecewise delineation of homogeneous inclusions, effecti
 out noise from the images. 
 
 ## Regularization norm
-![](/collections/images/SoS/regularization.png)
+![](/collections/images/20250319_SoS/regularization.jpeg)
 The proposed SDR is superior to FDR regardless of the data and regularization norm. 
 
 The use of multiple regularization directions with MA-AWTV improves the reconstruction for edges that are not
@@ -104,12 +104,12 @@ SDR is observed to be robust against variations in the regularization constant �
 
 $\lambda$ = 0.025 was found be give fair reconstruction regardless the inclusion geometries and noise levels.
 
-![](/collections/images/SoS/lambda.png)
+![](/collections/images/20250319_SoS/lambda.jpeg)
 
  Too small λ (e.g. λ = 0.00062) introduce noise in the images, whereas too large λ lead to over-regularization, which
 smears the inclusion geometries
 ## Multi-angle reconstruction
-![](/collections/images/SoS/angles.png)
+![](/collections/images/20250319_SoS/angles.jpeg)
 SDR results significantly
 improve with increasing number of plane-wave angles. For instance, smaller inclusions are resolved in examples
 P1 and P2, and the vertical inclusions in P6 are separated.
@@ -120,13 +120,13 @@ depth of 20 mm. The inclusion had a speed-of-sound of 1548 m s−1 and the backg
 , which were simulating a tumor with 2.2% speed-of-sound contrast. The sampling frequency of the transducer was set to
 5 MHz.
 
-![](/collections/images/SoS/invivo.png)
+![](/collections/images/20250319_SoS/invivo.jpeg)
 
 ## In vivo data 
 Data was recorded from a female patient (of 80–90 year-old age group) with a breast lesion, which the biopsy later
 revealed as invasive ductal carcinoma.
 
-![](/collections/images/SoS/bmode.png)
+![](/collections/images/20250319_SoS/bmode.jpeg)
 
 SDR algorithm delineates an inclusion geometry at (x = 0, y = 10) above the mid-range SoS value
 (1580 m s−1), as a single focal region as confirmed by biopsy and with a lateral extent in agreement with that observed in B-mode. 
