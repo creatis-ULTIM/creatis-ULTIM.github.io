@@ -14,7 +14,7 @@ pdf: "https://www-sciencedirect-com.docelec.insa-lyon.fr/science/article/pii/S03
 
 Backscatter coefficient (BSC) represents the quantity of backscattered signal coming from a volume of soft tissue. It is linked to the density, shape and size of scatterers in it and can therefore provide valuable information about its structure. The BSC gives quantitative results that are system and operator independent. It has shown potential for liver steatosis diagnosis as well as tumor treatment monitoring. This study focuses on the latter case. The most commonly used method to estimate the BSC is based on the reference phantom method (RPM) which has demonstrated great results but suffers from inherent problems. The main contribution of this study is the *in vivo* validation of an *in situ* calibration bead as an alternative to the RPM. This review will first introduce the RPM and its limitations. Next, the paper's methodology and results will be presented, followed by a discussion of its findings. 
 
-# The reference phantom method
+# The reference phantom method (RPM)
 
 The RPM method uses the backscattered RF data from the sample, a tumor in this case: 
 {:refdef: style="text-align: center;"}
@@ -29,7 +29,7 @@ where $$H(f)$$ is the system impulse response, $$D(f,x)$$ is the diffraction fac
 
 $$\sigma(f,x) = \frac{W(f,x) A(f,x) T(f,x)}{W_{ref}(f,x) A_{ref}(f,x) T_{ref}(f,x)}\sigma_{ref}(f,x)$$
 
-By doing so, the system impulse response and the diffraction factor cancel out. The BSC of the reference is known either by using a theoretical model or by performing a calibration. Since the travel path of the wave is not the same for the sample and the reference phantom, it is necessary to compensate for the difference in attenuation and transmission. These losses are easy to estimate in the reference phantom but can be difficult to determine in the intervening tissues. Errors in this compensation will result in a higher variance and bias when computing $$\sigma(f,x)$$.
+By doing so, the system impulse response and the diffraction factor cancel out. The BSC of the reference is known either by using a theoretical model or by performing a calibration. Since the travel path of the wave is not the same for the sample and the reference phantom, it is necessary to compensate for the difference in attenuation and transmission. Attenuation and transmission are easy to estimate in the reference phantom but can be difficult to determine in the intervening tissues. Errors in this compensation will result in a higher variance and bias when computing $$\sigma(f,x)$$.
 
 # Proposed method
 ## The bead method
@@ -105,4 +105,4 @@ This article is not the first to bring up the idea of using an *in situ* calibra
 
 - The estimations are not always at the same depth as the bead. For example, in the ESD map, this difference is not taken into account in the bead method and may introduce errors in the estimation. 
 
-- From the reviewer's understanding, the formula of $$\sigma(f,x)$$ given in the paper is odd. In order to compensate the attenuation and transmission loss, $$A_{ref}(f,x)$$, $$T_{ref}(f,x)$$ should be in the numerator and $$A(f,x)$$, $$T(f,x)$$ in the denominator. 
+- From the reviewer's understanding, the formula of $$\sigma(f,x)$$ given in the paper is inconsistent. In order to properly compensate for the attenuation and transmission loss, $$A_{ref}(f,x)$$, $$T_{ref}(f,x)$$ should be in the numerator and $$A(f,x)$$, $$T(f,x)$$ in the denominator. 
