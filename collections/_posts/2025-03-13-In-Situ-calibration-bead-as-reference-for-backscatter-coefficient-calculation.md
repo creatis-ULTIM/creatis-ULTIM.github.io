@@ -18,7 +18,7 @@ Backscatter coefficient (BSC) represents the quantity of backscattered signal co
 
 The RPM method uses the backscattered RF data from the sample, a tumor in this case: 
 {:refdef: style="text-align: center;"}
-![](/collections/images//BSC//tissues.jpeg){: width="400" }
+![](/collections/images//BSC_bead_calibration//tissues.jpeg){: width="400" }
 {:refdef}
 <p style="text-align: center;font-style:italic;"> B-mode image of a tumor highlighted in blue, white arrow depicts the intervening tissues (pork belly), red arrow shows the position of the calibration bead. Modified from the original paper.</p>
 The power spectrum $$W(f)$$ of the signal coming from the region of interest (ROI) is written as:
@@ -51,7 +51,7 @@ To simulate the effect of the intervening tissues, the acquisitions were made wi
 The position of the bead was found by doing a cross-correlation between the B-mode image and a bead spread function. To ensure that they computed the spectrum on the maximum bead signal, as in the calibration step, they interpolated the volume in both lateral and elevational directions, as illustrated in: 
 
 {:refdef: style="text-align: center;"}
-![](/collections/images//BSC//bead.jpg){: width="600" }
+![](/collections/images//BSC_bead_calibration//bead.jpg){: width="600" }
 {:refdef}
 <p style="text-align: center;font-style:italic;"> Signal energy decreases from the center of the bead. Interpolation of the data points helps recover the maximum signal.</p>
 
@@ -68,7 +68,7 @@ Case A is considered the true measurement and serves as a reference for error es
 Here are the results for the mean BSC: 
 
 {:refdef: style="text-align: center;"}
-![](/collections/images//BSC//BSC.jpg){: width="600" }
+![](/collections/images//BSC_bead_calibration//BSC.jpg){: width="600" }
 {:refdef}
 <p style="text-align: center;font-style:italic;"> Mean BSC of the tumor using both the reference and the bead method.</p>
 
@@ -77,14 +77,14 @@ The bead without pork belly, case B, gave results comparable to case A. This sho
 To further the analysis, they computed the equivalent scatterer diameter (ESD) and the effective acoustic concentration (EAC) by fitting a Gaussian model to the BSC curve. These parameters are helpful because they can bring some physical meaning to the BSC estimation. The next figure shows the mapping of the ESD in the same tumor in the 4 cases: 
 
 {:refdef: style="text-align: center;"}
-![](/collections/images//BSC//ESD.jpg){: width="600" }
+![](/collections/images//BSC_bead_calibration//ESD.jpg){: width="600" }
 {:refdef}
 <p style="text-align: center;font-style:italic;"> Equivalent scatterer diameter of a tumor using the reference phantom method and the bead method, with and without pork belly.</p>
 The estimations without pork belly were in good agreement. However, when the pork belly is added, a clear shift is seen in the ESD map of the RPM method. No apparent shift can be seen in the bead method.
 
 They also computed the absolute difference of the ESD and EAC between the cases B, C, D and case A. 
 {:refdef: style="text-align: center;"}
-![](/collections/images//BSC//error.jpg){: width="600" }
+![](/collections/images//BSC_bead_calibration//error.jpg){: width="600" }
 {:refdef}
 <p style="text-align: center;font-style:italic;"> Mean absolute difference of the ESD and EAC was computed in case B, C, D and compared to case A. Each line represents a different tumor.</p>
 In each tumor, the error was higher for the RPM than for the bead method. 
