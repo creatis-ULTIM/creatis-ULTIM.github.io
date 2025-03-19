@@ -22,7 +22,7 @@ pdf: "10.1088/1361-6560/aae2fb"
 
 # Principle : Jaeger et al, 2015.
 
-Considering straight ray approximation, the slowness can be directly linked to the differential time-of-flight based on apparent dispalcements along different ultrasound wave propagation paths when changing the steering angle. 
+Considering straight ray approximation, the slowness can be directly linked to the differential time-of-flight based on apparent displacements along different ultrasound wave propagation paths when changing the steering angle. 
 
 ![](/collections/images/20250319_SoS/jaeger.jpeg) 
 
@@ -51,7 +51,7 @@ $$\tau = L \sigma $$
 
 In pulse-echo imaging using a conventional ultrasound probe with single-sided tissue access, each cell is only affected by a restricted range of angular directions (θ1, θ2, ...), making the reconstruction problem incomplete.
 Moreover, the presence of shadow regions lead to an ill-conditioned sparse matrix L. 
-=> The problem needs to be solved as a regularized optimization probelm : 
+=> The problem needs to be solved as a regularized optimization problem : 
 
 ![](/collections/images/20250319_SoS/TV.jpeg)
 
