@@ -131,7 +131,7 @@ Data was recorded from a female patient (of 80–90 year-old age group) with a b
 SDR algorithm delineates an inclusion geometry at (x = 0, y = 10) above the mid-range SoS value (1580 m/s), as a single focal region as confirmed by biopsy and with a lateral extent in agreement with that observed in B-mode. 
 
 # Conclusions
-* The numerical experiments demonstrate that the proposed SDR method enables precise reconstruction of sound speed maps with excellent spatial resolution and contrast. 
+* The numerical experiments demonstrate that the proposed SDR ( spacial domain reconstruction) method enables precise reconstruction of sound speed maps with excellent spatial resolution and contrast compared to FDR (fourier domain reconstruction) formulation.  
 
 * SDR formulation can exclude regions of missing information in the reconstruction. 
 
