@@ -5,13 +5,18 @@ tags: Phantom Ultrasound Elastography Doppler Imaging
 date: 2025-11-04
 author: "Celia Mansilla & Clara Cousteix"
 cite:
-    authors: "Bailey Leadford, Jean-Baptiste Guillaumin, Micka€el Tanter, Jean-Francois Aubry, Beatrice Berthon"
+    authors: "Bailey Leadford, Jean-Baptiste Guillaumin, Mickaël Tanter, Jean-Francois Aubry, Beatrice Berthon"
     title:   "A Novel 3-D Multiparametric Ultrasonic Phantom for Anatomy, Elasticity, Blood Flow and Tissue Orientation Imaging"
     venue:   "Ultrasound in Medicine & Biology, 2025"
 pdf: "https://www.sciencedirect.com/science/article/pii/S0301562925003011"
 ---
 
-# Highlights 
+# Highlights
+
+- **First 3D multiparametric ultrasound phantom** combining elasticity contrast, vascular flow, and tissue anisotropy in a single model.  
+- **Innovative design** using magnetic orientation of scatterers to reproduce realistic tissue microstructure.  
+- **Validated across multiple ultrasound modalities** (B-mode, SWE, Power Doppler, BTI) — all within the same field of view.  
+- A **step toward realistic, multimodal validation tools** for next-generation clinical imaging developments.  
 
 # Introduction
 
@@ -48,7 +53,7 @@ The **outer gel** was prepared using 10% glycerin and 2% agar. After heating and
 Once both gels were set, the catheter was removed to create the wall-less blood vessel cavity. During imaging, a blood-mimicking fluid ($$\mu = 1.7 \times 10^{-3}~\text{Pa·s}$$ and $$\rho = 1040~\text{kg/m}^3$$) was injected at a flow rate of $$0.5~\text{mL/min}$$ using a syringe.  
 
 
-## USA acquisition sequence
+## US acquisition sequence
 
 #### Materials
 
