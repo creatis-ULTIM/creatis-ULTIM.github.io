@@ -69,7 +69,7 @@ Once both gels were set, the catheter was removed to create the wall-less blood 
 
 1. Shear waves generation: nine short focused ultrasound pulses.
 2. Capture waves: using ultrafast imaging to record these shear waves with 3 titled plane waves.
-3. The phantom was scaned in three different directions (0°, 45° and 90°) with a spatial resolution of 0.25 mm.
+3. The phantom was scanned in three different directions (0°, 45° and 90°) with a spatial resolution of 0.25 mm.
 4. 3D map was reconstructed by averaging 2D maps obtained in each of the three directions.
 
 ##### Power Doppler imaging
@@ -82,7 +82,7 @@ Power Doppler was used for 2 purposes:
 1. **Blood flow data**:
 - Single Value Decomposition (SVD) of 200 images.
 - Remove the first five eigenvectors containing stronger signals from tissue and filter out tissue motion.
-- Averaging of 3 scanning directions
+- Averaging of 3 scanning directions.
 
 2. **Blood vessel diameter**:
 - Obtain a binarized image to highlight the vessels.
