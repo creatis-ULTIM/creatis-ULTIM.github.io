@@ -2,7 +2,7 @@
 layout: review
 title: "A Novel 3-D Multiparametric Ultrasonic Phantom for Anatomy, Elasticity, Blood Flow and Tissue Orientation Imaging"
 tags: Phantom Ultrasound Elastography Doppler Imaging
-date: 2025-11-04
+date: 2025-11-07
 author: "Celia Mansilla & Clara Cousteix"
 cite:
     authors: "Bailey Leadford, Jean-Baptiste Guillaumin, Mickaël Tanter, Jean-Francois Aubry, Beatrice Berthon"
