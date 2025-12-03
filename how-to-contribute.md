@@ -75,6 +75,15 @@ rbenv install -v 2.7.1
 rbenv global 2.7.1
 ```
 
+You might encounter the following error:
+```shell
+"Can't locate FindBin.pm in @INC (you may need to install the FindBin module)..."
+```
+Please consider installing perl to resolve it (see [this OpenSSL issue](https://github.com/openssl/openssl/issues/13761)), for example using the following command line (distro-dependent):
+```shell
+dnf install perl
+```
+
 Make sure you have the right version installed and selected:
 ```shell
 ruby -v
